@@ -41,5 +41,5 @@ end
 
 # print products_list
 products_list.each do |prod|
-  puts "El producto #{prod.name} tiene un valor promedio de #{prod.average}"
+  puts "El producto #{prod.name} tiene un valor promedio de $#{prod.average}"
 end
