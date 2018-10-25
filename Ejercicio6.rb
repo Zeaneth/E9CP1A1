@@ -26,7 +26,7 @@ products_list = []
 data = []
 File.open('catalogo.txt', 'r') { |file| data = file.readlines}
 data.each do |prod|
-  ls = prod.split(', ')
+  ls = prod.chomp.split(', ')
   #products_list << Product.new(ls[0], ls[1], ls[2], ls[3], ls[4])
   products_list << Product.new(*ls)
 end
