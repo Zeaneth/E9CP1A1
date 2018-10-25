@@ -27,10 +27,11 @@ class Morseable
     hash = [nil,'-----','.----','..---','...--','....-','-....','--...','---..','----.']
     hash[index]
   end
+
   def to_morse
     self.generate_hash(@number)
   end
 end
 
-m = Morseable.new(3)
+m = Morseable.new(5)
 print m.to_morse
